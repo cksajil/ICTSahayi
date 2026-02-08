@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from .gpt_config import GPT_CONFIG_124M
 from .transformer import TransformerBlock
-from .utils import LayerNorm
+from .layers import LayerNorm
 
 
 class GPTModel(nn.Module):
@@ -34,4 +34,3 @@ class GPTModel(nn.Module):
 torch.manual_seed(123)
 model = GPTModel(GPT_CONFIG_124M)
 model.eval()
-# Disable dropout during inference

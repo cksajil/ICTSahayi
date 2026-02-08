@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from src.utils import LayerNorm, FeedForward
+from .layers import LayerNorm, FeedForward
 
 
 class MultiHeadAttention(nn.Module):
