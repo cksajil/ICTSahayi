@@ -7,9 +7,6 @@ from src.gpt_config import GPT_CONFIG_124M, model_configs
 from src.utils import text_to_token_ids, token_ids_to_text, generate
 
 settings, params = download_and_load_gpt2(model_size="124M", models_dir="gpt2")
-print("Settings:", settings)
-print("Params keys:", params.keys())
-
 
 # Copy the base configuration and update with specific model settings
 model_name = "gpt2-small (124M)"  # Example model name
