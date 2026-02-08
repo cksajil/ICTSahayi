@@ -76,7 +76,7 @@ test_loader = DataLoader(
 
 settings, params = download_and_load_gpt2(model_size="124M", models_dir="gpt2")
 
-model_name = "gpt2-small (124M)"  # Example model name
+model_name = "gpt2-small (124M)"
 NEW_CONFIG = GPT_CONFIG_124M.copy()
 NEW_CONFIG.update(model_configs[model_name])
 
@@ -98,7 +98,7 @@ model = GPTModel(GPT_CONFIG_124M)
 model.to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=0.0004, weight_decay=0.1)
 
-num_epochs = 10
+num_epochs = 2
 train_losses, val_losses, tokens_seen = train_model_simple(
     model,
     train_loader,
@@ -124,7 +124,7 @@ plot_losses(epochs_tensor, tokens_seen, train_losses, val_losses)
 torch.manual_seed(123)
 
 
-file_name = f"{re.sub(r'[ ()]', '', CHOOSE_MODEL) }-sft.pth"
+file_name = f"model_tuned/{re.sub(r'[ ()]', '', CHOOSE_MODEL) }-sft.pth"
 torch.save(model.state_dict(), file_name)
 print(f"Model saved as {file_name}")
 
@@ -132,21 +132,21 @@ print(f"Model saved as {file_name}")
 # model.load_state_dict(torch.load("gpt2-medium355M-sft.pth"))
 
 
-for entry in test_data[:1]:
-    input_text = format_input(entry)
-    token_ids = generate(
-        model=model,
-        idx=text_to_token_ids(input_text, tokenizer).to(device),
-        max_new_tokens=256,
-        context_size=GPT_CONFIG_124M["context_length"],
-        eos_id=50256,
-    )
-    generated_text = token_ids_to_text(token_ids, tokenizer)
-    response_text = (
-        generated_text[len(input_text) :].replace("### Response:", "").strip()
-    )
+# for entry in test_data[:1]:
+#     input_text = format_input(entry)
+#     token_ids = generate(
+#         model=model,
+#         idx=text_to_token_ids(input_text, tokenizer).to(device),
+#         max_new_tokens=256,
+#         context_size=GPT_CONFIG_124M["context_length"],
+#         eos_id=50256,
+#     )
+#     generated_text = token_ids_to_text(token_ids, tokenizer)
+#     response_text = (
+#         generated_text[len(input_text) :].replace("### Response:", "").strip()
+#     )
 
-    print(input_text)
-    print(f"\nCorrect response:\n>> {entry['output']}")
-    print(f"\nModel response:\n>> {response_text.strip()}")
-    print("-------------------------------------")
+#     print(input_text)
+#     print(f"\nCorrect response:\n>> {entry['output']}")
+#     print(f"\nModel response:\n>> {response_text.strip()}")
+#     print("-------------------------------------")

@@ -46,6 +46,6 @@ def train_model_simple(
                 )
 
         # Print a sample text after each epoch
-        generate_and_print_sample(model, tokenizer, device, start_context)
+        # generate_and_print_sample(model, tokenizer, device, start_context)
 
     return train_losses, val_losses, track_tokens_seen
