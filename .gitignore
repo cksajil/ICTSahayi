@@ -12,3 +12,4 @@ __pycache__/
 notebooks/
 data/
 gpt2/
+model_tuned/
