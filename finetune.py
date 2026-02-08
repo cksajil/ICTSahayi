@@ -11,13 +11,7 @@ from src.gpt_loader import load_weights_into_gpt
 from src.gpt_download import download_and_load_gpt2
 from src.gpt_config import GPT_CONFIG_124M, model_configs
 from src.dataset import InstructionDataset, custom_collate_fn
-from src.utils import (
-    text_to_token_ids,
-    token_ids_to_text,
-    generate,
-    load_file,
-    format_input,
-)
+from src.utils import load_file
 
 CHOOSE_MODEL = "gpt2-small (124M)"
 file_path = "data/instruction_faq.json"
@@ -98,7 +92,7 @@ model = GPTModel(GPT_CONFIG_124M)
 model.to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=0.0004, weight_decay=0.1)
 
-num_epochs = 10
+num_epochs = 2
 train_losses, val_losses, tokens_seen = train_model_simple(
     model,
     train_loader,
