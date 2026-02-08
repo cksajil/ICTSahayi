@@ -1,3 +1,4 @@
+import re
 import time
 import torch
 import tiktoken
@@ -18,6 +19,7 @@ from src.utils import (
     format_input,
 )
 
+CHOOSE_MODEL = "gpt2-small (124M)"
 file_path = "data/instruction_faq.json"
 data = load_file(file_path)
 print("Number of entries:", len(data))
@@ -122,7 +124,15 @@ plot_losses(epochs_tensor, tokens_seen, train_losses, val_losses)
 torch.manual_seed(123)
 
 
-for entry in test_data[:3]:
+file_name = f"{re.sub(r'[ ()]', '', CHOOSE_MODEL) }-sft.pth"
+torch.save(model.state_dict(), file_name)
+print(f"Model saved as {file_name}")
+
+# Load model via
+# model.load_state_dict(torch.load("gpt2-medium355M-sft.pth"))
+
+
+for entry in test_data[:1]:
     input_text = format_input(entry)
     token_ids = generate(
         model=model,
