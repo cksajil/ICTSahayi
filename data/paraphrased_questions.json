@@ -1,0 +1,122 @@
+[
+    {
+        "instruction": "Can you tell me what ICTAK is?",
+        "input": "",
+        "output": "ICT Academy of Kerala (ICTAK) is a not-for-profit social enterprise established under a Public-Private Partnership model to provide ICT skills training and improve employability.",
+        "original_question": "What is the ICT Academy of Kerala?"
+    },
+    {
+        "instruction": "In which year did ICT Academy of Kerala start?",
+        "input": "",
+        "output": "ICT Academy of Kerala was founded in 2014 with the mission of bridging skill gaps in ICT training.",
+        "original_question": "When was the ICT Academy of Kerala established?"
+    },
+    {
+        "instruction": "Where is the main office of ICTAK?",
+        "input": "",
+        "output": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+        "original_question": "Where is the headquarters of ICT Academy of Kerala located?"
+    },
+    {
+        "instruction": "I live outside Kerala. Can I still join an ICTAK course?",
+        "input": "",
+        "output": "Yes, candidates from outside Kerala can apply for ICTAK courses, though the highest scholarship benefits may vary by residence.",
+        "original_question": "Can non-Kerala residents apply for ICT Academy of Kerala courses?"
+    },
+    {
+        "instruction": "What is the age range for joining a course?",
+        "input": "",
+        "output": "Yes, the general age range for course applicants is between 20 and 56 years.",
+        "original_question": "Is there an age limit to apply?"
+    },
+    {
+        "instruction": "Can I study online, or do I have to attend in person?",
+        "input": "",
+        "output": "Yes, ICTAK offers both online virtual classroom programmes and offline courses in IT parks.",
+        "original_question": "Are both online and offline courses available?"
+    },
+    {
+        "instruction": "How much scholarship can I get?",
+        "input": "",
+        "output": "Yes, scholarships up to 75% are available based on the entrance test performance.",
+        "original_question": "Is there a scholarship available for ICTAK courses?"
+    },
+    {
+        "instruction": "Will I get my registration fee back?",
+        "input": "",
+        "output": "No, the registration fee (e.g., INR 250) is not refundable.",
+        "original_question": "Is the registration fee refundable?"
+    },
+    {
+        "instruction": "I missed a live session. What can I do?",
+        "input": "",
+        "output": "Recorded session videos are available for learners who miss live classes.",
+        "original_question": "What happens if someone misses a live class?"
+    },
+    {
+        "instruction": "Which topics come in the scholarship exam?",
+        "input": "",
+        "output": "The test includes numerical ability, logical reasoning, data manipulation, and verbal ability.",
+        "original_question": "What subjects are tested in the scholarship entrance test?"
+    },
+    {
+        "instruction": "Are marks deducted for wrong answers in the entrance test?",
+        "input": "",
+        "output": "No, there is no negative marking in the scholarship test.",
+        "original_question": "Is there negative marking in the entrance test?"
+    },
+    {
+        "instruction": "How many months do the long-term programmes take?",
+        "input": "",
+        "output": "Long-term certification programmes typically last around 6 months, including internships.",
+        "original_question": "How long are long-term programmes at ICTAK?"
+    },
+    {
+        "instruction": "Will ICTAK help me get a job?",
+        "input": "",
+        "output": "Yes, learners who complete programmes may get placement support, internships, and career assistance.",
+        "original_question": "Does ICTAK provide placement assistance?"
+    },
+    {
+        "instruction": "How do I get a refund for a programme?",
+        "input": "",
+        "output": "Refund requests must be made at least five days before the programme start; otherwise, refunds may be denied.",
+        "original_question": "What is the refund policy for programmes?"
+    },
+    {
+        "instruction": "Can I move to a later batch?",
+        "input": "",
+        "output": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+        "original_question": "What is the deferral policy at ICTAK?"
+    },
+    {
+        "instruction": "What is the email or phone number of ICTAK?",
+        "input": "",
+        "output": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+        "original_question": "How can I contact ICT Academy of Kerala?"
+    },
+    {
+        "instruction": "Where are the regional centres of ICTAK?",
+        "input": "",
+        "output": "Yes, regional centres exist in Koratty (Thrissur) and Kozhikode.",
+        "original_question": "Does ICTAK have regional offices?"
+    },
+    {
+        "instruction": "Do I need to know programming before joining?",
+        "input": "",
+        "output": "Not all programs require prior programming knowledge; foundational courses are available for beginners.",
+        "original_question": "Is prior programming knowledge mandatory?"
+    },
+    {
+        "instruction": "Do I need to know English to join?",
+        "input": "",
+        "output": "Basic English proficiency is recommended as most programs are delivered in English.",
+        "original_question": "Is English proficiency required?"
+    },
+    {
+        "instruction": "Can I pay the fee in parts?",
+        "input": "",
+        "output": "Some programs may offer installment payment options subject to terms and conditions.",
+        "original_question": "Can fees be paid in installments?"
+    }
+]

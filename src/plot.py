@@ -22,4 +22,5 @@ def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses):
 
     fig.tight_layout()  # Adjust layout to make room
     plt.savefig("static/loss-plot.pdf")
+    plt.savefig("static/loss-plot.png", dpi=150)
     plt.show()
