@@ -1,0 +1,8 @@
+torch>=2.2
+tiktoken>=0.6
+numpy
+matplotlib
+requests
+tqdm
+# Only used to read the original OpenAI GPT-2 checkpoint (TensorFlow format)
+tensorflow>=2.15
