@@ -1,0 +1,681 @@
+{
+  "systems": {
+    "Retrieval baseline (no model)": {
+      "held-out": {
+        "n": 6,
+        "rouge_l": 0.13,
+        "close_match": 0.0
+      },
+      "reworded (seen)": {
+        "n": 16,
+        "rouge_l": 0.309,
+        "close_match": 0.25
+      },
+      "reworded (unseen)": {
+        "n": 4,
+        "rouge_l": 0.135,
+        "close_match": 0.0
+      }
+    },
+    "GPT-2 base (not fine-tuned)": {
+      "held-out": {
+        "n": 6,
+        "rouge_l": 0.148,
+        "close_match": 0.0
+      },
+      "reworded (seen)": {
+        "n": 16,
+        "rouge_l": 0.089,
+        "close_match": 0.0
+      },
+      "reworded (unseen)": {
+        "n": 4,
+        "rouge_l": 0.132,
+        "close_match": 0.0
+      }
+    },
+    "GPT-2 fine-tuned": {
+      "held-out": {
+        "n": 6,
+        "rouge_l": 0.18,
+        "close_match": 0.0
+      },
+      "reworded (seen)": {
+        "n": 16,
+        "rouge_l": 0.211,
+        "close_match": 0.062
+      },
+      "reworded (unseen)": {
+        "n": 4,
+        "rouge_l": 0.261,
+        "close_match": 0.0
+      }
+    }
+  },
+  "details": [
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "held-out",
+      "question": "What is the deferral policy at ICTAK?",
+      "reference": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+      "prediction": "Refund requests must be made at least five days before the programme start; otherwise, refunds may be denied.",
+      "rouge_l": 0.056
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "held-out",
+      "question": "Where is the headquarters of ICT Academy of Kerala located?",
+      "reference": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+      "prediction": "The mission of ICT Academy of Kerala is to improve employability by delivering industry-aligned training programs in collaboration with government and industry partners.",
+      "rouge_l": 0.35
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "held-out",
+      "question": "Are scholarships available for women candidates?",
+      "reference": "Yes, additional scholarship benefits may be available for women candidates in certain programs.",
+      "prediction": "Scholarships up to 70% or 40% and cashback offers are often applicable based on category and score.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "held-out",
+      "question": "What types of programmes does ICT Academy of Kerala offer?",
+      "reference": "ICTAK provides Industry Readiness Programs, Upskilling Programs, Essential Skill Programs, Nanoskill Programs, and Partner Programs.",
+      "prediction": "The mission of ICT Academy of Kerala is to improve employability by delivering industry-aligned training programs in collaboration with government and industry partners.",
+      "rouge_l": 0.154
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "held-out",
+      "question": "Can candidates transfer scholarships to another program?",
+      "reference": "Scholarships are program-specific and cannot usually be transferred.",
+      "prediction": "Yes, unemployed candidates are eligible to apply for ICTAK programs.",
+      "rouge_l": 0.105
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "held-out",
+      "question": "Does ICTAK provide special offers like cashback?",
+      "reference": "Yes, candidates may receive a cashback offer on the fee upon successful completion if they don’t qualify for other scholarships.",
+      "prediction": "Yes, learners who complete programmes may get placement support, internships, and career assistance.",
+      "rouge_l": 0.118
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Can you tell me what ICTAK is?",
+      "reference": "ICT Academy of Kerala (ICTAK) is a not-for-profit social enterprise established under a Public-Private Partnership model to provide ICT skills training and improve employability.",
+      "prediction": "Yes, ICTAK programs are designed to accommodate working professionals, including flexible schedules.",
+      "rouge_l": 0.103
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "In which year did ICT Academy of Kerala start?",
+      "reference": "ICT Academy of Kerala was founded in 2014 with the mission of bridging skill gaps in ICT training.",
+      "prediction": "ICT Academy of Kerala (ICTAK) is a not-for-profit social enterprise established under a Public-Private Partnership model to provide ICT skills training and improve employability.",
+      "rouge_l": 0.267
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Can I study online, or do I have to attend in person?",
+      "reference": "Yes, ICTAK offers both online virtual classroom programmes and offline courses in IT parks.",
+      "prediction": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "How much scholarship can I get?",
+      "reference": "Yes, scholarships up to 75% are available based on the entrance test performance.",
+      "prediction": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "rouge_l": 0.077
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Will I get my registration fee back?",
+      "reference": "No, the registration fee (e.g., INR 250) is not refundable.",
+      "prediction": "No, the registration fee (e.g., INR 250) is not refundable.",
+      "rouge_l": 1.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "I missed a live session. What can I do?",
+      "reference": "Recorded session videos are available for learners who miss live classes.",
+      "prediction": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Which topics come in the scholarship exam?",
+      "reference": "The test includes numerical ability, logical reasoning, data manipulation, and verbal ability.",
+      "prediction": "The test includes numerical ability, logical reasoning, data manipulation, and verbal ability.",
+      "rouge_l": 1.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Are marks deducted for wrong answers in the entrance test?",
+      "reference": "No, there is no negative marking in the scholarship test.",
+      "prediction": "The test includes numerical ability, logical reasoning, data manipulation, and verbal ability.",
+      "rouge_l": 0.182
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "How many months do the long-term programmes take?",
+      "reference": "Long-term certification programmes typically last around 6 months, including internships.",
+      "prediction": "Long-term certification programmes typically last around 6 months, including internships.",
+      "rouge_l": 1.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Will ICTAK help me get a job?",
+      "reference": "Yes, learners who complete programmes may get placement support, internships, and career assistance.",
+      "prediction": "Yes, scholarships up to 75% are available based on the entrance test performance.",
+      "rouge_l": 0.077
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "How do I get a refund for a programme?",
+      "reference": "Refund requests must be made at least five days before the programme start; otherwise, refunds may be denied.",
+      "prediction": "Delayed payments may attract penalties depending on program policies.",
+      "rouge_l": 0.074
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "What is the email or phone number of ICTAK?",
+      "reference": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "prediction": "ICT Academy of Kerala (ICTAK) is a not-for-profit social enterprise established under a Public-Private Partnership model to provide ICT skills training and improve employability.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Where are the regional centres of ICTAK?",
+      "reference": "Yes, regional centres exist in Koratty (Thrissur) and Kozhikode.",
+      "prediction": "Members get access to professional development, free training from global partners, workshops, and certification opportunities.",
+      "rouge_l": 0.083
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Do I need to know programming before joining?",
+      "reference": "Not all programs require prior programming knowledge; foundational courses are available for beginners.",
+      "prediction": "Not all programs require prior programming knowledge; foundational courses are available for beginners.",
+      "rouge_l": 1.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Do I need to know English to join?",
+      "reference": "Basic English proficiency is recommended as most programs are delivered in English.",
+      "prediction": "Yes, final-year students awaiting results can apply for many ICTAK programs.",
+      "rouge_l": 0.083
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (seen)",
+      "question": "Can I pay the fee in parts?",
+      "reference": "Some programs may offer installment payment options subject to terms and conditions.",
+      "prediction": "No, the registration fee (e.g., INR 250) is not refundable.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (unseen)",
+      "question": "Where is the main office of ICTAK?",
+      "reference": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+      "prediction": "The mission of ICT Academy of Kerala is to improve employability by delivering industry-aligned training programs in collaboration with government and industry partners.",
+      "rouge_l": 0.35
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (unseen)",
+      "question": "I live outside Kerala. Can I still join an ICTAK course?",
+      "reference": "Yes, candidates from outside Kerala can apply for ICTAK courses, though the highest scholarship benefits may vary by residence.",
+      "prediction": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "rouge_l": 0.062
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (unseen)",
+      "question": "What is the age range for joining a course?",
+      "reference": "Yes, the general age range for course applicants is between 20 and 56 years.",
+      "prediction": "Refund requests must be made at least five days before the programme start; otherwise, refunds may be denied.",
+      "rouge_l": 0.062
+    },
+    {
+      "system": "Retrieval baseline (no model)",
+      "set": "reworded (unseen)",
+      "question": "Can I move to a later batch?",
+      "reference": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+      "prediction": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "rouge_l": 0.065
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "held-out",
+      "question": "What is the deferral policy at ICTAK?",
+      "reference": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+      "prediction": "The deferral policy is a policy that allows you to defer the request to the next step.\n\nThe deferral policy is a policy that allows you to defer the request to the next step.",
+      "rouge_l": 0.154
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "held-out",
+      "question": "Where is the headquarters of ICT Academy of Kerala located?",
+      "reference": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+      "prediction": "The headquarters of ICT Academy of Kerala is located in the city of Kerala.\n\nThe ICT Academy of Kerala is a private university in Kerala.\n\nThe ICT Academy of Kerala is a private university in Kerala.\n\nThe ICT Academy of Kerala is a private university in Kerala.\n\nThe ICT Academy of Kerala is a private university in Kerala.",
+      "rouge_l": 0.243
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "held-out",
+      "question": "Are scholarships available for women candidates?",
+      "reference": "Yes, additional scholarship benefits may be available for women candidates in certain programs.",
+      "prediction": "The answer is yes. The scholarship program is available for women candidates who are pursuing a career in the field of education.",
+      "rouge_l": 0.4
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "held-out",
+      "question": "What types of programmes does ICT Academy of Kerala offer?",
+      "reference": "ICTAK provides Industry Readiness Programs, Upskilling Programs, Essential Skill Programs, Nanoskill Programs, and Partner Programs.",
+      "prediction": "The programme is a combination of the following:\n\nA high-level course in the field of computer science,\n\nA high-level course in the field of computer science, a high-level course in the field of computer science, a high-level course in the field of computer science, a high-level course in the field of computer science, a high-level course",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "held-out",
+      "question": "Can candidates transfer scholarships to another program?",
+      "reference": "Scholarships are program-specific and cannot usually be transferred.",
+      "prediction": "The answer is yes. The answer is yes.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "held-out",
+      "question": "Does ICTAK provide special offers like cashback?",
+      "reference": "Yes, candidates may receive a cashback offer on the fee upon successful completion if they don’t qualify for other scholarships.",
+      "prediction": "Yes.",
+      "rouge_l": 0.091
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Can you tell me what ICTAK is?",
+      "reference": "ICT Academy of Kerala (ICTAK) is a not-for-profit social enterprise established under a Public-Private Partnership model to provide ICT skills training and improve employability.",
+      "prediction": "A: A C++ program that is written in C++.",
+      "rouge_l": 0.111
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "In which year did ICT Academy of Kerala start?",
+      "reference": "ICT Academy of Kerala was founded in 2014 with the mission of bridging skill gaps in ICT training.",
+      "prediction": "In which year did ICT Academy of Kerala start?\n\nIn which year did ICT Academy of Kerala start?\n\nIn which year did ICT Academy of Kerala start?\n\nIn which year did ICT Academy of Kerala start?\n\nIn which year did ICT Academy of Kerala start?\n\nIn which year did ICT Academy of Kerala start?",
+      "rouge_l": 0.222
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Can I study online, or do I have to attend in person?",
+      "reference": "Yes, ICTAK offers both online virtual classroom programmes and offline courses in IT parks.",
+      "prediction": "Yes. You can study online, but you must be able to complete the task.",
+      "rouge_l": 0.143
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "How much scholarship can I get?",
+      "reference": "Yes, scholarships up to 75% are available based on the entrance test performance.",
+      "prediction": "The scholarship requirement is based on the number of years you have spent in the United States. The scholarship requirement is based on the number of years you have spent in the United States.\n\nHow much does it cost to attend a college?\n\nThe scholarship requirement is based on the number of years you have spent in the United States. The scholarship requirement is based on the number of years",
+      "rouge_l": 0.096
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Will I get my registration fee back?",
+      "reference": "No, the registration fee (e.g., INR 250) is not refundable.",
+      "prediction": "The answer is yes. If you are a registered user of the website, you will receive a registration fee.\n\nIf you are not a registered user, you will receive a registration fee.\n\nIf you are not a registered user, you will receive a registration fee.\n\nIf you are not a registered user, you will receive a registration fee.\n\nIf you are",
+      "rouge_l": 0.111
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "I missed a live session. What can I do?",
+      "reference": "Recorded session videos are available for learners who miss live classes.",
+      "prediction": "I'm not sure what to do. I'm not sure what to do.\n\nI'm not sure what to do. I'm not sure what to do.\n\nI'm not sure what to do. I'm not sure what to do.\n\nI'm not sure what to do. I'm not sure what to do.\n\nI'm not sure what to",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Which topics come in the scholarship exam?",
+      "reference": "The test includes numerical ability, logical reasoning, data manipulation, and verbal ability.",
+      "prediction": "The following topics are covered in the scholarship exam:",
+      "rouge_l": 0.095
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Are marks deducted for wrong answers in the entrance test?",
+      "reference": "No, there is no negative marking in the scholarship test.",
+      "prediction": "The answer to the question \"Are marks deducted for wrong answers in the entrance test?\" is \"Yes.\"",
+      "rouge_l": 0.222
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "How many months do the long-term programmes take?",
+      "reference": "Long-term certification programmes typically last around 6 months, including internships.",
+      "prediction": "The answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:\n\nThe answer is:",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Will ICTAK help me get a job?",
+      "reference": "Yes, learners who complete programmes may get placement support, internships, and career assistance.",
+      "prediction": "The answer is yes.\n\nThe answer is that you can use the following code to get a job:\n\n#include <stdio.h> #include <stdlib.h> #include <string.h> #include <string.h> #include <string.h> #include <string.h> #include <string.h> #include <",
+      "rouge_l": 0.075
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "How do I get a refund for a programme?",
+      "reference": "Refund requests must be made at least five days before the programme start; otherwise, refunds may be denied.",
+      "prediction": "The refund is a form of payment that is sent to the programme. The refund is not a refund for the programme.\n\nHow do I get a refund for a programme that is not in the programme?\n\nThe refund is a form of payment that is sent to the programme. The refund is not a refund for the programme.\n\nHow do I get a refund for a",
+      "rouge_l": 0.071
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "What is the email or phone number of ICTAK?",
+      "reference": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "prediction": "ICTAK is a service that allows you to send and receive email and phone numbers. It is a service that allows you to send and receive phone numbers.",
+      "rouge_l": 0.098
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Where are the regional centres of ICTAK?",
+      "reference": "Yes, regional centres exist in Koratty (Thrissur) and Kozhikode.",
+      "prediction": "The ICTAK is a regional centre of ICTAK. It is located in the centre of the country.\n\nThe ICTAK is a regional centre of ICTAK. It is located in the centre of the country. The ICTAK is a regional centre of ICTAK. It is located in the centre of the country.\n\nThe ICTAK is",
+      "rouge_l": 0.063
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Do I need to know programming before joining?",
+      "reference": "Not all programs require prior programming knowledge; foundational courses are available for beginners.",
+      "prediction": "The answer is yes.\n\nThe first step is to understand the programming language.\n\nThe second step is to understand the programming language.\n\nThe third step is to understand the programming language.\n\nThe fourth step is to understand the programming language.\n\nThe fifth step is to understand the programming language.\n\nThe sixth step is to understand the programming language.",
+      "rouge_l": 0.028
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Do I need to know English to join?",
+      "reference": "Basic English proficiency is recommended as most programs are delivered in English.",
+      "prediction": "The answer is yes.\n\nThe English language is a very important part of our lives. It is the language of our ancestors. It is the language of our ancestors.\n\nThe English language is the language of our ancestors.\n\nThe English language is the language of our ancestors.\n\nThe English language is the language of our ancestors.\n\nThe English language is the",
+      "rouge_l": 0.082
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (seen)",
+      "question": "Can I pay the fee in parts?",
+      "reference": "Some programs may offer installment payment options subject to terms and conditions.",
+      "prediction": "Yes. The fee is paid in part by the user.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (unseen)",
+      "question": "Where is the main office of ICTAK?",
+      "reference": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+      "prediction": "The main office of ICTAK is located in the city of ICTAK.\n\nThe main office of ICTAK is located in the city of ICTAK. The main office of ICTAK is located in the city of ICTAK.\n\nThe main office of ICTAK is located in the city of ICTAK. The main office of ICT",
+      "rouge_l": 0.116
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (unseen)",
+      "question": "I live outside Kerala. Can I still join an ICTAK course?",
+      "reference": "Yes, candidates from outside Kerala can apply for ICTAK courses, though the highest scholarship benefits may vary by residence.",
+      "prediction": "I am a member of the ICTAK group. I am interested in learning about ICTAK.\n\nI am interested in learning about ICTAK. I am interested in learning about ICTAK. I am interested in learning about ICTAK. I am interested in learning about ICTAK. I am interested in learning about ICTAK. I am interested in learning",
+      "rouge_l": 0.027
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (unseen)",
+      "question": "What is the age range for joining a course?",
+      "reference": "Yes, the general age range for course applicants is between 20 and 56 years.",
+      "prediction": "The age range for joining a course is:\n\n18-49\n\n50-64\n\n65+\n\n66+\n\n67+\n\n68+\n\n69+\n\n70+\n\n71+\n\n72+\n\n73+\n\n74+\n\n75+\n\n76+\n\n77+\n\n78+\n\n79",
+      "rouge_l": 0.293
+    },
+    {
+      "system": "GPT-2 base (not fine-tuned)",
+      "set": "reworded (unseen)",
+      "question": "Can I move to a later batch?",
+      "reference": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+      "prediction": "The answer is yes.",
+      "rouge_l": 0.091
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "held-out",
+      "question": "What is the deferral policy at ICTAK?",
+      "reference": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+      "prediction": "The deferral policy is based on the academic performance of ICTAK students.",
+      "rouge_l": 0.067
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "held-out",
+      "question": "Where is the headquarters of ICT Academy of Kerala located?",
+      "reference": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+      "prediction": "The ICT Academy of Kerala is located in Kerala, but is not yet open to the general public.",
+      "rouge_l": 0.412
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "held-out",
+      "question": "Are scholarships available for women candidates?",
+      "reference": "Yes, additional scholarship benefits may be available for women candidates in certain programs.",
+      "prediction": "Scholarships are available for women candidates who complete the required coursework.",
+      "rouge_l": 0.333
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "held-out",
+      "question": "What types of programmes does ICT Academy of Kerala offer?",
+      "reference": "ICTAK provides Industry Readiness Programs, Upskilling Programs, Essential Skill Programs, Nanoskill Programs, and Partner Programs.",
+      "prediction": "ICT Academy of Kerala offers a wide range of programmes including:\n\n• Advanced Technology, IT & IT Skills, IT & IT Development, IT & IT Development & IT Development, IT & IT Development & IT Development, IT & IT Development & IT Development, IT & IT Development & IT Development, IT & IT Development & IT Development, IT & IT Development &",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "held-out",
+      "question": "Can candidates transfer scholarships to another program?",
+      "reference": "Scholarships are program-specific and cannot usually be transferred.",
+      "prediction": "Yes, candidates who apply for scholarships may apply for other scholarships.",
+      "rouge_l": 0.1
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "held-out",
+      "question": "Does ICTAK provide special offers like cashback?",
+      "reference": "Yes, candidates may receive a cashback offer on the fee upon successful completion if they don’t qualify for other scholarships.",
+      "prediction": "Yes, ICTAK offers cashback incentives based on performance, including cashback incentives based on performance.",
+      "rouge_l": 0.171
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Can you tell me what ICTAK is?",
+      "reference": "ICT Academy of Kerala (ICTAK) is a not-for-profit social enterprise established under a Public-Private Partnership model to provide ICT skills training and improve employability.",
+      "prediction": "CTAK is a global, nonprofit organization that provides training, career development, and career readiness programs to professionals.",
+      "rouge_l": 0.182
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "In which year did ICT Academy of Kerala start?",
+      "reference": "ICT Academy of Kerala was founded in 2014 with the mission of bridging skill gaps in ICT training.",
+      "prediction": "In 2014-15, ICT Academy of Kerala started as a private-sector training program.",
+      "rouge_l": 0.313
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Can I study online, or do I have to attend in person?",
+      "reference": "Yes, ICTAK offers both online virtual classroom programmes and offline courses in IT parks.",
+      "prediction": "Online courses are not available for ICTAK students.",
+      "rouge_l": 0.182
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "How much scholarship can I get?",
+      "reference": "Yes, scholarships up to 75% are available based on the entrance test performance.",
+      "prediction": "Scholarships are typically awarded based on academic performance, but may vary by region.",
+      "rouge_l": 0.385
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Will I get my registration fee back?",
+      "reference": "No, the registration fee (e.g., INR 250) is not refundable.",
+      "prediction": "Registration fees are not refundable.",
+      "rouge_l": 0.375
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "I missed a live session. What can I do?",
+      "reference": "Recorded session videos are available for learners who miss live classes.",
+      "prediction": "Live sessions are typically held in the evenings, but can be held in the weekends.",
+      "rouge_l": 0.077
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Which topics come in the scholarship exam?",
+      "reference": "The test includes numerical ability, logical reasoning, data manipulation, and verbal ability.",
+      "prediction": "Scholarships are awarded based on academic performance, and not on academic performance.",
+      "rouge_l": 0.083
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Are marks deducted for wrong answers in the entrance test?",
+      "reference": "No, there is no negative marking in the scholarship test.",
+      "prediction": "Yes, marks are deducted based on the test results.",
+      "rouge_l": 0.211
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "How many months do the long-term programmes take?",
+      "reference": "Long-term certification programmes typically last around 6 months, including internships.",
+      "prediction": "Long-term programmes typically last around five years, but some may be longer.",
+      "rouge_l": 0.5
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Will ICTAK help me get a job?",
+      "reference": "Yes, learners who complete programmes may get placement support, internships, and career assistance.",
+      "prediction": "Yes, ICTAK offers flexible working hours, flexible schedules, and flexible working hours for all employees.",
+      "rouge_l": 0.143
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "How do I get a refund for a programme?",
+      "reference": "Refund requests must be made at least five days before the programme start; otherwise, refunds may be denied.",
+      "prediction": "Refunds are not refundable unless the programme is cancelled.",
+      "rouge_l": 0.148
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "What is the email or phone number of ICTAK?",
+      "reference": "You can contact via info@ictkerala.org or phone +91 75 940 51437.",
+      "prediction": "Email:\nCTAK is a global, nonprofit organization that provides training, career development, and career readiness programs to professionals.",
+      "rouge_l": 0.0
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Where are the regional centres of ICTAK?",
+      "reference": "Yes, regional centres exist in Koratty (Thrissur) and Kozhikode.",
+      "prediction": "The regional centres of ICTAK are located in Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala, Kerala,",
+      "rouge_l": 0.122
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Do I need to know programming before joining?",
+      "reference": "Not all programs require prior programming knowledge; foundational courses are available for beginners.",
+      "prediction": "Yes, ICTAK offers programming courses that cover a wide range of subjects.",
+      "rouge_l": 0.16
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Do I need to know English to join?",
+      "reference": "Basic English proficiency is recommended as most programs are delivered in English.",
+      "prediction": "Yes, ICTAK offers English proficiency programs that include English proficiency courses.",
+      "rouge_l": 0.348
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (seen)",
+      "question": "Can I pay the fee in parts?",
+      "reference": "Some programs may offer installment payment options subject to terms and conditions.",
+      "prediction": "Yes, part-time students may pay a fee of up to ₹30,000 per semester.",
+      "rouge_l": 0.148
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (unseen)",
+      "question": "Where is the main office of ICTAK?",
+      "reference": "The headquarters of ICT Academy of Kerala is at Thejaswini Building, Technopark Campus, Thiruvananthapuram, Kerala, India.",
+      "prediction": "The main office of ICTAK is located in the central district of Delhi.",
+      "rouge_l": 0.207
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (unseen)",
+      "question": "I live outside Kerala. Can I still join an ICTAK course?",
+      "reference": "Yes, candidates from outside Kerala can apply for ICTAK courses, though the highest scholarship benefits may vary by residence.",
+      "prediction": "Yes, ICTAK offers a wide range of programmes including online courses, internships, and internships.",
+      "rouge_l": 0.182
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (unseen)",
+      "question": "What is the age range for joining a course?",
+      "reference": "Yes, the general age range for course applicants is between 20 and 56 years.",
+      "prediction": "The age range for joining a course is based on the academic requirements, including subject matter, subject matter expertise, and subject matter expertise.",
+      "rouge_l": 0.378
+    },
+    {
+      "system": "GPT-2 fine-tuned",
+      "set": "reworded (unseen)",
+      "question": "Can I move to a later batch?",
+      "reference": "Learners can defer to another batch with a fee, within six months of the original batch’s closing.",
+      "prediction": "Yes, you can move to a later batch if you wish.",
+      "rouge_l": 0.276
+    }
+  ]
+}
