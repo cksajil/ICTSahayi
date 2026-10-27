@@ -25,9 +25,28 @@ This is a learning project. I implemented the GPT-2 model, weight loading and tr
 
 ## Results
 
+Run on a Kaggle GPU, October 2026. Training took about 7 seconds.
+
 ![Training and validation loss](static/loss-plot.png)
 
-Evaluation numbers are in [`results/eval_summary.md`](results/eval_summary.md), and every question, reference and model answer is in `results/eval_results.json`. The training settings and losses are in `results/train_log.json`.
+**Loss:** training 4.56 → 0.96, validation 4.53 → 1.38 over 5 epochs. A starting loss of 4.56 confirms the pretrained weights loaded. (The buggy first version started from a random model, near 10.8.)
+
+**Answer quality**, mean ROUGE-L F1 against the reference answer (0 to 1, higher is better):
+
+| System | Held-out questions (n=6) | Reworded, original was in training (n=16) | Reworded, original was held out (n=4) |
+| --- | --- | --- | --- |
+| Retrieval baseline (word overlap, no model) | 0.13 | 0.31 | 0.14 |
+| GPT-2 base, not fine-tuned | 0.15 | 0.09 | 0.13 |
+| GPT-2 fine-tuned | 0.18 | 0.21 | 0.26 |
+
+**What this shows:**
+
+- **Fine-tuning taught the format.** The base model rambles, repeats itself and drifts into C code. The fine-tuned model gives short, on-topic answers in the FAQ's style and stops cleanly.
+- **It did not learn the facts.** Reading all 26 answers, only about 2 are right in substance. The rest are fluent and confident but wrong. It says the main office is "in the central district of Delhi", that long-term programmes last "around five years", that "online courses are not available", and that marks are deducted for wrong answers.
+- **ROUGE-L hides this.** "Long-term programmes typically last around five years" scored 0.50 against the correct "around 6 months", because the wording overlaps. Word overlap is not correctness, so the next version needs a metric that checks facts.
+- **62 examples is far too few to store facts in model weights.** This is the case for retrieval: keep the facts in a searchable store and let the model phrase them.
+
+Every question, reference and model answer is in [`results/eval_results.json`](results/eval_results.json). The summary is in [`results/eval_summary.md`](results/eval_summary.md), and the training settings in [`results/train_log.json`](results/train_log.json). With 6 to 16 questions per set, treat these as rough signals.
 
 ## Run it
 
@@ -44,7 +63,7 @@ python infer.py --question "Is there an age limit to apply?"
 
 ## Changelog
 
-**October 2026: fixed a training bug.** The first version of `finetune.py` loaded the pretrained GPT-2 weights into one model, then created and trained a second, randomly initialised model. So the saved model was trained from scratch on 52 examples, not fine-tuned. The loss curve showed it: training loss started near 7, where a pretrained model starts far lower. This version:
+**October 2026: fixed a training bug.** The first version of `finetune.py` loaded the pretrained GPT-2 weights into one model, then created and trained a second, randomly initialised model. So the saved model was trained from scratch on 52 examples, not fine-tuned. The loss curve showed it: the first logged training loss was near 7, while the pretrained model starts at about 4.5 on this data. This version:
 
 - fine-tunes the model that holds the pretrained weights, with a lower learning rate (5e-5 instead of 4e-4)
 - fails loudly if the starting loss looks like a random model

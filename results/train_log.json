@@ -1,0 +1,23 @@
+{
+  "base_model": "gpt2-small (124M), OpenAI weights",
+  "device": "cuda",
+  "epochs": 5,
+  "learning_rate": 5e-05,
+  "batch_size": 8,
+  "weight_decay": 0.1,
+  "seed": 123,
+  "split_sizes": {
+    "train": 52,
+    "test": 6,
+    "validation": 4
+  },
+  "loss_before": {
+    "train": 4.558641831080119,
+    "val": 4.525477409362793
+  },
+  "loss_after": {
+    "train": 0.9595775485038758,
+    "val": 1.3826324939727783
+  },
+  "training_minutes": 0.12
+}
